@@ -18,8 +18,8 @@
     <script type="text/javascript">
       window.onload = function () {
         // Access the environment variable
-        var myEnvVar = window._env_.SECRET;
-        var myEnvVar1 = window._env_.APP;
+        var myEnvVar1 = window._env.APP;
+        var myEnvVar = window._env.SECRET;
 
         // Print the environment variable
         document.getElementById('envVar').innerHTML = myEnvVar;
