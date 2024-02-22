@@ -11,9 +11,18 @@
 <body>
   <main>
     <h1>Vanilla JavaScript App</h1>
-    <script>
-      console.log(window._env.SECRET);
-  </script>  
+    <h3>Var is</h3>
+    <p id="envVar"></p>
+
+    <script type="text/javascript">
+      window.onload = function () {
+        // Access the environment variable
+        var myEnvVar = window._env.SECRET;
+
+        // Print the environment variable
+        document.getElementById('envVar').innerHTML = myEnvVar;
+      }
+    </script>
   </main>
 </body>
 
