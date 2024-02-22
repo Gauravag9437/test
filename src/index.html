@@ -13,14 +13,17 @@
     <h1>Vanilla JavaScript App</h1>
     <h3>Var is</h3>
     <p id="envVar"></p>
+    <p id="envVar1"></p>
 
     <script type="text/javascript">
       window.onload = function () {
         // Access the environment variable
-        var myEnvVar = window._env.SECRET;
+        var myEnvVar = window._env_.SECRET;
+        var myEnvVar1 = window._env_.APP;
 
         // Print the environment variable
         document.getElementById('envVar').innerHTML = myEnvVar;
+        document.getElementById('envVar1').innerHTML = myEnvVar1;
       }
     </script>
   </main>
